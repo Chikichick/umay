@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+hr{
+transform:translateY(80px);
+	border:1px solid #202124;
+}
+.navbar{
+	text-align:center;
+display:inline-flex;
+justify-content:space-between;
+padding:9 90px;
+width:96%;
+margin-top:30px;
+margin-left:20px;
+}
+.navbar a{
+	text-decoration:none;
+	color:white;
+	font-size:20px;
+}
+.navbar ul {
+display:inline-flex;
+list-style:none;
+}
+.navbar ul li{
+margin:15px;
+padding:0 10px;
+margin-top:-3px;
+}
+.active, .navbar ul li:hover{
+	background:grey;
+}
+.submenu button{
+	width:100px;
+	padding:5px;
+}
+.submenu textarea{
+	resize:none;
+	font-size:20px;
+	transition:width 0.4s ease-in-out;
+	height:50px;
+}
+.submenu textarea:focus{
+	height:200px;
+}
+.submenu{
+	display:none;
+}
+.navbar ul li:hover .submenu{
+	display:block;
+	position:absolute;
+	background:grey;
+}
+.active{
+	display:none;
+}
+.navbar big{
+	color:grey;
+	margin-right:50%;
+}
